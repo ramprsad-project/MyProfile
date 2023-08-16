@@ -11,7 +11,6 @@
   tr#{$parent}     { display: table-row !important; }
   th#{$parent},
   td#{$parent}     { display: table-cell !important; }
-  hight:100%;
 }
 
 // [converter] $parent hack
