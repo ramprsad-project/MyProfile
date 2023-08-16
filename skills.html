@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0-beta2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            
+        }
+        h1 {
+            text-align: center;
+        }
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            width: 200px;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .skills li i {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        /* Apply different colors for each skill */
+        .full-stack {
+            background-color: #3498db;
+            color: #fff;
+        }
+        .database {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+        .angular {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+        .react {
+            background-color: #9b59b6;
+            color: #fff;
+        }
+        .ngrx {
+            background-color: #27ae60;
+            color: #fff;
+        }
+        .net-core {
+            background-color: #f39c12;
+            color: #fff;
+        }
+        .web-api {
+            background-color: #e67e22;
+            color: #fff;
+        }
+        .javascript {
+            background-color: #f1c40f;
+            color: #333;
+        }
+        .git {
+            background-color: #34495e;
+            color: #fff;
+        }
+        .mvc {
+            background-color: #8e44ad;
+            color: #fff;
+        }
+        .solid {
+            background-color: #16a085;
+            color: #fff;
+        }
+        .agile {
+            background-color: #3498db;
+            color: #fff;
+        }
+        .design-patterns {
+            background-color: #c0392b;
+            color: #fff;
+        }
+        .azure {
+            background-color: #2980b9;
+            color: #fff;
+        }
+        /* Add more color classes for other skills */
+        .auto-style1 {
+            font-weight: normal;
+            color: #333333;
+        }
+        .newStyle1 {
+            font-family: Calibri;
+        }
+        @keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-box {
+    opacity: 0;
+    animation: fadeInLeft 0.6s ease-in-out 0.1s forwards;
+}
+    </style>
+</head>
+<body>
+    <h1 class="auto-style1"><span class="newStyle1"><strong>My Skills</strong></span></h1>
+    <ul class="skills colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+        <li class="full-stack">
+            <i class="fas fa-code"></i>
+            <p>C#.Net</p>
+        </li>
+        <li class="database">
+            <i class="fas fa-database"></i>
+            <p>Database Design</p>
+        </li>
+        <li class="angular">
+            <i class="fab fa-angular"></i>
+            <p>Angular</p>
+        </li>
+        <li class="react">
+            <i class="fab fa-react"></i>
+            <p>React JS</p>
+        </li>
+        <li class="ngrx">
+            <i class="fas fa-cogs"></i>
+            <p>NgRx</p>
+        </li>
+        <li class="net-core">
+            <i class="fas fa-code"></i>
+            <p>.NET Core</p>
+        </li>
+        <li class="web-api">
+            <i class="fab fa-node-js"></i>
+            <p>Web API</p>
+        </li>
+        <li class="javascript">
+            <i class="fab fa-js-square"></i>
+            <p>JavaScript</p>
+        </li>
+        <li class="git">
+            <i class="fab fa-git-alt"></i>
+            <p>GIT</p>
+        </li>
+        <li class="mvc">
+            <i class="fas fa-code-branch"></i>
+            <p>MVC</p>
+        </li>
+        <li class="solid">
+            <i class="fas fa-shield-alt"></i>
+            <p>SOLID principles</p>
+        </li>
+        <li class="agile">
+            <i class="fas fa-tasks"></i>
+            <p>Agile methodologies (Scrum)</p>
+        </li>
+        <li class="design-patterns">
+            <i class="fas fa-object-ungroup"></i>
+            <p>Design patterns (e.g., Singleton, Abstract Factory)</p>
+        </li>
+        <li class="azure">
+            <i class="fab fa-microsoft"></i>
+            <p>Azure</p>
+        </li>
+        <!-- Add more skills with different color classes -->
+    </ul>
+</body>
+</html>
