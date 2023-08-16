@@ -155,6 +155,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
+    width: 767px;
+    height: 129px;
 }
 
 button[disabled],
@@ -1369,7 +1371,7 @@ pre code {
   }
 
   .col-md-6 {
-    width: 50%;
+    width: 100%;
   }
 
   .col-md-7 {
@@ -4558,7 +4560,7 @@ a.thumbnail.active {
 .progress-bar {
   float: left;
   width: 0%;
-  height: 100%;
+  height: 150%;
   font-size: 12px;
   line-height: 20px;
   color: #fff;
