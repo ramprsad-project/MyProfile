@@ -65,7 +65,46 @@
 	<script src="js/jquery.countTo.js"></script>
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<style type="text/css">
+        .auto-style2 {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            height: 285px;
+            width: 260px;
+        }
 
+        .auto-style4 {
+            width: 172px;
+        }
+
+        .newStyle4 {
+            vertical-align: top;
+        }
+
+        .auto-style5 {
+            vertical-align: top;
+            width: 388px;
+        }
+
+        .auto-style6 {
+            width: 388px;
+        }
+
+        .auto-style7 {
+            text-align: center;
+            font-size: x-small;
+        }
+    </style>
+    <script lang="application/javascript">
+        function loadPage(page) {
+            var iframehtml = "<iframe src='" + page + "' height='800' width='1200' style='border:none;'></iframe>";
+            document.getElementById("wrapper").innerHTML = iframehtml;
+        }
+    </script>
 	</head>
 
 	<body onload="loadPage('aboutme.html')">
