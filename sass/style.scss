@@ -15,7 +15,7 @@ $brand-color-3: #f9bf3f !default;
 $brand-color-4: #a84cb8 !default;
 $brand-color-5: #2fa499 !default;
 $brand-color-6: #4054b2 !default;
-
+$brand-color-7: #ff7f00 !default;
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -974,7 +974,7 @@ margin-left: -20px;
 	background: $brand-gray;
 	overflow: visible;
 }
-.progress-bar{
+.progress-bar {
 	background: $brand-primary;
 	box-shadow: none;
 	font-size: 12px;
@@ -985,7 +985,8 @@ margin-left: -20px;
 	position: relative;
 	overflow: visible;
 	@include border-radius(8px);
-	&:after{
+
+	&:after {
 		position: absolute;
 		top: -2px;
 		right: 0;
@@ -995,63 +996,94 @@ margin-left: -20px;
 		background: $brand-primary;
 		@include border-radius(50%);
 	}
-	span{
+
+	span {
 		position: absolute;
 		top: -22px;
 		right: 0;
 	}
-	&.color-1{
+
+	&.color-1 {
 		background: $brand-primary;
-		&:after{
+
+		&:after {
 			background: $brand-primary;
 		}
-		span{
+
+		span {
 			color: $brand-primary;
 		}
 	}
-	&.color-2{
+
+	&.color-2 {
 		background: $brand-color-2;
-		&:after{
+
+		&:after {
 			background: $brand-color-2;
 		}
-		span{
+
+		span {
 			color: $brand-color-2;
 		}
 	}
-	&.color-3{
+
+	&.color-3 {
 		background: $brand-color-3;
-		&:after{
+
+		&:after {
 			background: $brand-color-3;
 		}
-		span{
+
+		span {
 			color: $brand-color-3;
 		}
 	}
-	&.color-4{
+
+	&.color-4 {
 		background: $brand-color-4;
-		&:after{
+
+		&:after {
 			background: $brand-color-4;
 		}
-		span{
+
+		span {
 			color: $brand-color-4;
 		}
 	}
-	&.color-5{
+
+	&.color-5 {
 		background: $brand-color-5;
-		&:after{
+
+		&:after {
 			background: $brand-color-5;
 		}
-		span{
+
+		span {
 			color: $brand-color-5;
 		}
 	}
-	&.color-6{
+
+	&.color-6 {
 		background: $brand-color-6;
-		&:after{
+
+		&:after {
 			background: $brand-color-6;
 		}
-		span{
+
+		span {
 			color: $brand-color-6;
+		}
+	}
+
+	&.color-7 {
+		background: $brand-color-7;
+
+		&:after {
+			background: $brand-color-7;
+		}
+
+		span {
+			color: $brand-color-7;
 		}
 	}
 }
