@@ -6,13 +6,12 @@
 @mixin responsive-visibility($parent) {
   #{$parent} {
     display: block !important;
-    height:100%;
   }
   table#{$parent}  { display: table !important; }
   tr#{$parent}     { display: table-row !important; }
   th#{$parent},
   td#{$parent}     { display: table-cell !important; }
-  height:100%;
+  hight:100%;
 }
 
 // [converter] $parent hack
