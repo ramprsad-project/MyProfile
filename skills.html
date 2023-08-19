@@ -10,196 +10,162 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
         }
         h1 {
             text-align: center;
         }
         /* Apply different colors for each skill */
-        .c1 {
-            background-color: #3498db;
+        .t {
+            height: 20%;
+            
+        }
+        .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12, .c13, .c14 {
+            background-color: #3498db; /* Default background color */
             color: #fff;
             border: 1px;
-            border-radius: 5px;
-            word-wrap: break-word;
-            
+            border-radius: 10px;
+            word-wrap: normal;
+            text-align: center;
+            font-weight: bold;
+            width: 25%;
+           letter-spacing: 2px;
+           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .c2 {
             background-color: #e74c3c;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         .c3 {
             background-color: #2ecc71;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         .c4 {
             background-color: #9b59b6;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         .c5 {
             background-color: #27ae60;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         .c6 {
             background-color: #f39c12;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         .c7 {
             background-color: #e67e22;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         .c8 {
-            background-color: #f1c40f;
-            color: #333;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
+            background-color: #bd9909;
         }
         .c9 {
             background-color: #34495e;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         .c10 {
             background-color: #8e44ad;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         .c11 {
             background-color: #16a085;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         .c12 {
             background-color: #3498db;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         .c13 {
             background-color: #c0392b;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         .c14 {
             background-color: #2980b9;
-            color: #fff;
-            border: 1px;
-            border-radius: 4px;
-            word-wrap: normal;
         }
         /* Add more color classes for other skills */
         .auto-style1 {
             font-weight: normal;
-            color: #333333;
+            color: #1c1a3d;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .newStyle1 {
             font-family: Calibri;
+            text-align: center;
         }
         @keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.animate-box {
-    opacity: 0;
-    animation: fadeInLeft 0.1s ease-in-out 0.05s forwards;  /* Adjusted animation duration and delay */
-}
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .animate-box {
+            opacity: 0;
+            animation: fadeInLeft 0.1s ease-in-out 0.05s forwards; /* Adjusted animation duration and delay */
+        }
     </style>
 </head>
 <body>
-    <h1 class="auto-style1"><span class="newStyle1"><strong>My Skills</strong></span></h1>
-
     <table>
-        <tr>
-            <td class="c1">
-                C#.Net
-            </td>
-            <td class="c2">
-                Database Design
-            </td>
-            <td class="c3">
-                Angular
-            </td>
-            <td class="c4">
-                React JS
-            </td>
-        </tr>
-        <tr>
-            <td class="c5">
-                NgRx
-            </td>
-            <td class="c6">
-                .NET Core
-            </td>
-            <td class="c7">
-                Web API
-            </td>
-            <td class="c8">
-                JavaScript
-            </td>
-        </tr>
-        <tr>
-            <td class="c9">
-                Git
-            </td>
-            <td class="c10">
-                MVC
-            </td>
-            <td class="c11">
-                SOLID principles
-            </td>
-            <td class="c12">
-                Agile methodologies (Scrum)
-            </td>
-        </tr>
-        <tr>
-            <td class="c13">
-                Design patterns (e.g., Singleton, Abstract Factory)
-            </td>
-            <td class="c14">
-                Azure
-            </td>
-            <td class="c15">
-                -
-            </td>
-            <td class="c16">
-                -
-            </td>
-        </tr>
+        <table style="height:100%;width:100%;">
+            <th colspan="4"><h1 class="auto-style1">My Skills</h1></th>
+            <th></th><th></th><th></th>
+            <tr class="t">
+                <td class="c1">
+                    C#.Net
+                </td>
+                <td class="c2">
+                    Database Design
+                </td>
+                <td class="c3">
+                    Angular
+                </td>
+                <td class="c4">
+                    React JS
+                </td>
+                
+            </tr>
+            <tr class="t">
+                <td class="c5">
+                    NgRx
+                </td>
+                <td class="c6">
+                    .NET Core
+                </td>
+                <td class="c7">
+                    Web API
+                </td>
+                <td class="c8">
+                    JavaScript
+                </td>
+            </tr>
+            <tr class="t">
+                <td class="c9">
+                    Git
+                </td>
+                <td class="c10">
+                    MVC
+                </td>
+                <td class="c11">
+                    SOLID principles
+                </td>
+                <td class="c12">
+                    Agile <br/> Methodologies     
+                </td>
+            </tr>
+            <tr class="t">
+                <td class="c13">
+                    Design patterns
+                </td>
+                <td class="c14">
+                    Azure
+                </td>
+                <td class="c15">
+                    -
+                </td>
+                <td class="c16">
+                    -
+                </td>
+            </tr>
+        </table>
     </table>
 </body>
 </html>
