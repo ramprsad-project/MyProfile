@@ -1,142 +1,161 @@
 <!DOCTYPE HTML>
-<html style="width: 80%; height: 90%; background-image: url(images/bg.jpg); ">
-	<head>
+<html style="width: 100%; height: 90%; background-image: url(images/bg.jpg); ">
+
+<head>
 	<style type="text/css">
-		button{
+		button {
 			background-image: url(images/button-1.png);
 			margin-right: 10px;
-    background-color: rgba(10, 131, 218, 0.171);
-    background-repeat: no-repeat;
-    background-position: left;
-    width: 90%;
-    padding: 10px 20px; /* Add padding for better readability */
-    border-radius: 12px;
-   border-color: black;
-   border:none;
-    font-size: 13px;
-    cursor: pointer;
-	transition: background-color 0.3s, color 0.3s, font-weight 0.2s;
+			margin-top: 0.5%;
+			background-color: rgba(10, 131, 218, 0.171);
+			background-repeat: no-repeat;
+			background-position: left;
+			width: 90%;
+			padding: 10px 20px;
+			/* Add padding for better readability */
+			border-radius: 12px;
+			border-color: black;
+			border: none;
+			font-size: 13px;
+			cursor: pointer;
+			transition: background-color 0.3s, color 0.3s, font-weight 0.2s;
 		}
 
 		button:hover {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow on hover */
-	background-color: #c2ff1c6e; /* New background color on hover */
-    color: #000000; /* New text color on hover */
-	font-weight: bold;
-	transform: scale(1.05);
-}
-		li{
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+			/* Shadow on hover */
+			background-color: #c2ff1c6e;
+			/* New background color on hover */
+			color: #000000;
+			/* New text color on hover */
+			font-weight: bold;
+			transform: scale(1.05);
+		}
+
+		li {
 			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-			text-align: left; 
+			text-align: left;
 			list-style-type: none;
 			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 		}
-		a{
+
+		a {
 			text-decoration: none;
 		}
-        .auto-style2 {
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            position: relative;
-            left: 3px;
-            top: 3px;
-            height: 250px;
-            width: 240px;
-        }
 
-        .auto-style4 {
-            width: 172px;
-			height:100%;
+		.auto-style2 {
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+			position: relative;
+			left: 3px;
+			top: 3px;
+			height: 250px;
+			width: 240px;
+		}
+
+		.auto-style4 {
+			width: 172px;
+			height: 100%;
 			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 			margin-top: 5%;
 			margin-left: 10%;
 			color: navy;
 			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
+		}
 
-        .newStyle4 {
-            vertical-align: top;
-			width:100%;
-			height:100%;
+		.newStyle4 {
+			vertical-align: top;
+			width: 90%;
+			height: auto;
 			margin-left: 5%;
-        }
-		.newStyle3{
-			color:rgb(23, 22, 59);
+		}
+
+		.newStyle3 {
+			color: rgb(23, 22, 59);
 			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 		}
-        .auto-style5 {
-            vertical-align: top;
-            width: 90%;
+
+		.auto-style5 {
+			vertical-align: top;
+			width: 90%;
 			height: 100%;
 			word-wrap: normal;
-        }
+		}
 
-        .auto-style7 {
-            text-align: center;
-            font-size: x-small;
+		.auto-style7 {
+			text-align: center;
+			font-size: x-small;
 			height: 100%;
-        }
-    </style>
-    <script lang="application/javascript">
-        function loadPage(page) {
-    console.log("Loading page:", page);
-    var iframehtml = "<iframe src='" + page + "' style='overflow-y: auto; height: 90%; width: 80%; position: absolute; top: 0px; right: 0px; left: 15%; bottom: 0px; border: none;' height='90%' width='80%'></iframe>";
-    document.getElementById("wrapper").innerHTML = iframehtml;
-}
-    </script>
-	</head>
+		}
+	</style>
+	<script lang="application/javascript">
+		function loadPage(page) {
+			console.log("Loading page:", page);
+			var iframehtml = "<iframe src='" + page + "' style='overflow-y: auto; height: 90%; width: 80%; position: absolute; top: 0px; right: 0px; left: 15%; bottom: 0px; border: none;' height='90%' width='80%'></iframe>";
+			document.getElementById("wrapper").innerHTML = iframehtml;
+		}
+	</script>
+</head>
 
-	<body onload="loadPage('aboutme.html')">
-		<div>
-			<table style="height: 100%;">
-				<tr>
-					<td style="background-color: transparent;">
-						<div>
-							<div class="auto-style2" style="background-image: url(images/about.jpg); border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; border-top-left-radius: 50%; border-top-right-radius: 50%;"></div>
-							<ul>
-								<li>
-									<img src="images/name.png" style="width: 100%;height: auto;margin-left: 2px;"/>
-								</li>
-								<li><img src="images/sub.png" style="width: 100%;height: auto;margin-left: 2px;"/></li>
-								<li ><button type="button" onclick="loadPage('aboutme.html')" data-nav-section="about">
+<body onload="loadPage('aboutme.html')">
+	<div>
+		<table style="height: 100%;">
+			<tr style="width: 20%;">
+				<td style="background-color: transparent; ">
+					<div>
+						<div class="auto-style2"
+							style="background-image: url(images/about.jpg); border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; border-top-left-radius: 50%; border-top-right-radius: 50%;">
+						</div>
+						<ul>
+							<li>
+								<img src="images/name1.png" style="width: 100%;height: auto;margin-left: 2px;" />
+							</li>
+							<li><img src="images/badge.gif" style="margin-left: 10%;" /></li>
+							<li><button type="button" onclick="loadPage('aboutme.html')" data-nav-section="about">
 									About Me
 								</button>
-								</li>
-								<li>
-									<button type="button" onclick="loadPage('education.html')" data-nav-section="education">Education</button>
-								</li>
-								<li>
-									<button type="button" onclick="loadPage('skills.html')" data-nav-section="skills">Skills</button>
-								</li>
-								<li>
-									<button type="button" onclick="loadPage('techstack.html')" data-nav-section="services">Tech Stack</button>
-								</li>
-								<li>
-									<button type="button" onclick="loadPage('experience.html')" data-nav-section="experience">Relevant Experience</button>
-								</li>
-								<li>
-									<button type="button" onclick="loadPage('projects.html')" data-nav-section="contact">Projects</button>
-								</li>
-								<li>
-									<button type="button" onclick="loadPage('rolesresponsibilities.html')" data-nav-section="contact">R&R</button>
-								</li>
-								<li>
-									<button type="button" onclick="loadPage('contact.html')" data-nav-section="contact">Contact</button>
-								</li>
-								
-							</ul>
-						</div>
-						<h5 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);margin-left: 35%;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><u><a href="https://drive.google.com/uc?export=download&id=1JL5g8VkXIYjFysS0m-DenM2MVwZpq2pD">Download Resume</a></u></h3>
-					</td>
-					<td class="newStyle4">
-						<div id="wrapper"></div>
-					</td>
-				</tr>
-	
-			</table>
-		</div>
-	</body>
+							</li>
+							<li>
+								<button type="button" onclick="loadPage('education.html')"
+									data-nav-section="education">Education</button>
+							</li>
+							<li>
+								<button type="button" onclick="loadPage('skills.html')"
+									data-nav-section="skills">Skills</button>
+							</li>
+							<li>
+								<button type="button" onclick="loadPage('techstack.html')"
+									data-nav-section="services">Tech Stack</button>
+							</li>
+							<li>
+								<button type="button" onclick="loadPage('experience.html')"
+									data-nav-section="experience">Relevant Experience</button>
+							</li>
+							<li>
+								<button type="button" onclick="loadPage('projects.html')"
+									data-nav-section="contact">Projects</button>
+							</li>
+							<li>
+								<button type="button" onclick="loadPage('rolesresponsibilities.html')"
+									data-nav-section="contact">R&R</button>
+							</li>
+							<li>
+								<button type="button" onclick="loadPage('contact.html')"
+									data-nav-section="contact">Contact</button>
+							</li>
 
+						</ul>
+					</div>
+					<div style="display: flex; align-items: center; justify-content: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+						<u><a href="https://drive.google.com/uc?export=download&id=1JL5g8VkXIYjFysS0m-DenM2MVwZpq2pD">Download Resume</a></u>
+					</div>					
+				</td>
+				<td class="newStyle4">
+					<div id="wrapper"></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
 </html>
-
