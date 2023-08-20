@@ -1,112 +1,139 @@
 <!DOCTYPE html>
 <html style="width: 90%; height: 80%; margin: 5% 2% 2% 2%;">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills and Tools</title>
     <style>
-        td{
-            width:33%;
+        td {
+            width: 33%;
             height: 33%;
         }
+
         .skills-container {
             display: table-cell;
             flex-wrap: wrap;
             gap: 20px;
             margin-top: 20px;
         }
+
         .skill-box {
-            border: 2px solid #2196F3;
+            border: 2px solid #055da54c;
             border-radius: 8px;
             padding: 10px;
             width: 90%;
             height: 90%;
             margin-bottom: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+
+           animation: scaleAndRotate 0.5s;
         }
+
+        @keyframes scaleAndRotate {
+            from {
+                opacity: 0;
+                transform: scale(1) rotate(45deg);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) ;
+            }
+        }
+
         .skill-title {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 8px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-family: monospace;
         }
+
         .skill-list {
             list-style-type: none;
-            margin-left: 20px;
+            margin-left: 13px;
+            font-size: 16px;
             padding-left: 10px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-family: monospace;
         }
-        @keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
-.animate-box {
-    opacity: 0;
-    animation: fadeInLeft 0.3s ease-in-out 0.05s forwards; 
-}
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animate-box {
+            opacity: 0;
+            animation: fadeInLeft 0.3s ease-in-out 0.05s forwards;
+        }
     </style>
 </head>
+
 <body style="width: 100%;">
     <div class="skills-container colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
         <table style="width: 100%;">
             <tr>
                 <td>
-<!-- Skill Box 1 -->
-<div class="skill-box">
-    <div class="skill-title">Languages</div>
-    <ul class="skill-list">
-        <li>.Net Framework (4.0, 4.5), VB.NET, C#, ASP.Net, HTML, T-SQL, Angular</li>
-    </ul>
-</div>
+                    <!-- Skill Box 1 -->
+                    <div class="skill-box">
+                        <div class="skill-title">Languages</div>
+                        <ul class="skill-list">
+                            <li>.Net Framework (4.0, 4.5), VB.NET, C#, ASP.Net, HTML, T-SQL, Angular</li>
+                        </ul>
+                    </div>
                 </td>
                 <td>
-                     <!-- Skill Box 2 -->
-        <div class="skill-box">
-            <div class="skill-title">Cloud Technologies</div>
-            <ul class="skill-list">
-                <li>AWS, AZURE</li>
-            </ul>
-        </div>
+                    <!-- Skill Box 2 -->
+                    <div class="skill-box">
+                        <div class="skill-title">Cloud Technologies</div>
+                        <ul class="skill-list">
+                            <li>AWS, AZURE</li>
+                        </ul>
+                    </div>
                 </td>
                 <td>
-                            <!-- Skill Box 3 -->
-        <div class="skill-box">
-            <div class="skill-title">Operating System</div>
-            <ul class="skill-list">
-                <li>Windows NT/98/2000/2003/XP/Vista/7/10/11</li>
-            </ul>
-        </div>
+                    <!-- Skill Box 3 -->
+                    <div class="skill-box">
+                        <div class="skill-title">Operating System</div>
+                        <ul class="skill-list">
+                            <li>Windows NT/98/2000/2003/XP/Vista/7/10/11</li>
+                        </ul>
+                    </div>
                 </td>
             </tr>
             <tr>
-                <td>  <!-- Skill Box 4 -->
+                <td> <!-- Skill Box 4 -->
                     <div class="skill-box">
                         <div class="skill-title">.Net Technologies</div>
                         <ul class="skill-list">
                             <li>ASP.NET, ADO.NET, Windows Forms, Web Forms, AJAX, Web Services, WCF, LINQ</li>
                         </ul>
-                    </div></td>
+                    </div>
+                </td>
                 <td> <!-- Skill Box 5 -->
                     <div class="skill-box">
                         <div class="skill-title">Web Application Servers</div>
                         <ul class="skill-list">
                             <li>IIS 7.0/6.0/5.0</li>
                         </ul>
-                    </div></td>
+                    </div>
+                </td>
                 <td><!-- Skill Box 6 -->
                     <div class="skill-box">
                         <div class="skill-title">RDBMS</div>
                         <ul class="skill-list">
                             <li>Oracle 10x/11x, MS-SQL Server 2000/2005/2008</li>
                         </ul>
-                    </div></td>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td><!-- Skill Box 7 -->
@@ -115,52 +142,57 @@
                         <ul class="skill-list">
                             <li>SQL Server 2019, MySQL, PostgreSQL</li>
                         </ul>
-                    </div></td>
+                    </div>
+                </td>
                 <td><!-- Skill Box 8 -->
                     <div class="skill-box">
                         <div class="skill-title">Microsoft Office Tools</div>
                         <ul class="skill-list">
                             <li>Microsoft Word 03/07/10(beta), MS Visio, Excel, PowerPoint, Access, Outlook</li>
                         </ul>
-                    </div></td>
+                    </div>
+                </td>
                 <td> <!-- Skill Box 9 -->
                     <div class="skill-box">
                         <div class="skill-title">IDE Tools</div>
                         <ul class="skill-list">
-                            <li>SQL Server Management Studio, VisualStudio.NET 2003/2005/2008/2022 (Community Edition), FrontPage, Photoshop, Dreamweaver, Flash, UML, Adobe Premiere Pro, Audacity</li>
+                            <li>SQL Server Management Studio, FrontPage, VisualStudio.NET 2022 (Community Edition),
+                                Photoshop, Dreamweaver, Flash, UML, Adobe Premiere Pro, Audacity</li>
                         </ul>
-                    </div></td>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td>
-<!-- Skill Box 10 -->
-<div class="skill-box">
-    <div class="skill-title">Version Control Tools</div>
-    <ul class="skill-list">
-        <li>Team Foundation Server, GIT</li>
-    </ul>
-</div>
+                    <!-- Skill Box 10 -->
+                    <div class="skill-box">
+                        <div class="skill-title">Version Control Tools</div>
+                        <ul class="skill-list">
+                            <li>Team Foundation Server, Git</li>
+                        </ul>
+                    </div>
                 </td>
                 <td>
-                     <!-- Skill Box 11 -->
-        <div class="skill-box">
-            <div class="skill-title">Methodologies</div>
-            <ul class="skill-list">
-                <li>Client/Server Architecture, N-tier application architecture</li>
-            </ul>
-        </div>
+                    <!-- Skill Box 11 -->
+                    <div class="skill-box">
+                        <div class="skill-title">Methodologies</div>
+                        <ul class="skill-list">
+                            <li>Client/Server Architecture, N-tier application architecture</li>
+                        </ul>
+                    </div>
                 </td>
                 <td>
                     <!-- Skill Box 12 -->
-        <div class="skill-box">
-            <div class="skill-title">AI Tools</div>
-            <ul class="skill-list">
-                <li>ChatGPT</li>
-            </ul>
-        </div>
+                    <div class="skill-box">
+                        <div class="skill-title">AI Tools</div>
+                        <ul class="skill-list">
+                            <li>ChatGPT, Open AI, Bard</li>
+                        </ul>
+                    </div>
                 </td>
             </tr>
         </table>
     </div>
 </body>
+
 </html>

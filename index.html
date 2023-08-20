@@ -4,37 +4,38 @@
 <head>
 	<style type="text/css">
 		button {
-			background-image: url(images/button-1.png);
-			margin-right: 10px;
-			margin-top: 0.5%;
-			background-color: rgba(10, 131, 218, 0.171);
-			background-repeat: no-repeat;
-			background-position: left;
-			width: 90%;
-			padding: 10px 20px;
-			/* Add padding for better readability */
-			border-radius: 12px;
-			border-color: black;
+
+			color: white;
+			background: var(--clr, #00c8ff);
+			box-shadow: 0 0 3px var(--clr, #74d5ff),
+				0 0 4px rgba(0, 0, 0, 0.1);
+			transition: transform 0.2s, box-shadow 0.2s;
+margin-top: 2%;
+			border-radius: 7px;
 			border: none;
 			font-size: 13px;
 			cursor: pointer;
 			transition: background-color 0.3s, color 0.3s, font-weight 0.2s;
+			font-family: monospace;
 		}
 
 		button:hover {
-			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+			/*box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);*/
 			/* Shadow on hover */
-			background-color: #c2ff1c6e;
-			/* New background color on hover */
-			color: #000000;
 			/* New text color on hover */
 			font-weight: bold;
 			transform: scale(1.05);
+			background: var(--clr, rgb(85, 174, 1));
+			box-shadow: 0 0 10px var(--clr, #b5febb),
+				0 0 20px var(--clr, #7bf79c),
+				0 0 10px rgba(91, 185, 13, 0.1);
 		}
 
 		li {
-			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-			text-align: left;
+			font-family: monospace;
+			text-align: center;
+			justify-content: center;
+			
 			list-style-type: none;
 			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 		}
@@ -57,7 +58,7 @@
 		.auto-style4 {
 			width: 172px;
 			height: 100%;
-			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			font-family: monospace;
 			margin-top: 5%;
 			margin-left: 10%;
 			color: navy;
@@ -99,20 +100,20 @@
 </head>
 
 <body onload="loadPage('aboutme.html')">
-	<div>
+	<div >
 		<table style="height: 100%;">
 			<tr style="width: 20%;">
-				<td style="background-color: transparent; ">
-					<div>
+				<td style="background-color: transparent; display: flex; align-items: center; justify-content: left;">
+					<div >
 						<div class="auto-style2"
 							style="background-image: url(images/about.jpg); border-bottom-left-radius: 50%; border-bottom-right-radius: 50%; border-top-left-radius: 50%; border-top-right-radius: 50%;">
 						</div>
 						<ul>
 							<li>
-								<img src="images/name1.png" style="width: 100%;height: auto;margin-left: 2px;" />
+								<img src="images/name1.png" style="width: 100%;height: auto;" />
 							</li>
-							<li><img src="images/badge.gif" style="margin-left: 10%;" /></li>
-							<li><button type="button" onclick="loadPage('aboutme.html')" data-nav-section="about">
+							<li><img src="images/badge.gif" /></li>
+							<li ><button type="button" onclick="loadPage('aboutme.html')" data-nav-section="about">
 									About Me
 								</button>
 							</li>
@@ -121,35 +122,45 @@
 									data-nav-section="education">Education</button>
 							</li>
 							<li>
-								<button type="button" onclick="loadPage('skills.html')"
-									data-nav-section="skills">Skills</button>
+								<button type="button" onclick="loadPage('skills.html')" data-nav-section="skills">
+									Skills</button>
 							</li>
 							<li>
-								<button type="button" onclick="loadPage('techstack.html')"
-									data-nav-section="services">Tech Stack</button>
+								<button type="button" onclick="loadPage('techstack.html')" data-nav-section="services">
+
+									Tech Stack</button>
 							</li>
 							<li>
 								<button type="button" onclick="loadPage('experience.html')"
-									data-nav-section="experience">Relevant Experience</button>
+									data-nav-section="experience">
+
+									Rel. Experience</button>
 							</li>
 							<li>
-								<button type="button" onclick="loadPage('projects.html')"
-									data-nav-section="contact">Projects</button>
+								<button type="button" onclick="loadPage('projects.html')" data-nav-section="contact">
+
+									Projects</button>
 							</li>
 							<li>
 								<button type="button" onclick="loadPage('rolesresponsibilities.html')"
-									data-nav-section="contact">R&R</button>
+									data-nav-section="contact">
+
+									R&R</button>
 							</li>
 							<li>
-								<button type="button" onclick="loadPage('contact.html')"
-									data-nav-section="contact">Contact</button>
-							</li>
+								<button type="button" onclick="loadPage('contact.html')" data-nav-section="contact">
 
+									Contact</button>
+							</li>
+							<li>
+								<button type="button"
+									onclick="window.location.href='https://drive.google.com/uc?export=download&id=1JL5g8VkXIYjFysS0m-DenM2MVwZpq2pD'"
+									data-nav-section="contact">
+
+									Download Resume</button>
+							</li>
 						</ul>
 					</div>
-					<div style="display: flex; align-items: center; justify-content: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-						<u><a href="https://drive.google.com/uc?export=download&id=1JL5g8VkXIYjFysS0m-DenM2MVwZpq2pD">Download Resume</a></u>
-					</div>					
 				</td>
 				<td class="newStyle4">
 					<div id="wrapper"></div>
@@ -158,4 +169,5 @@
 		</table>
 	</div>
 </body>
+
 </html>

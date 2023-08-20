@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html style="width: 90%; height: 90%;">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0-beta2/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: monospace;
+            font-size: 18px;
             margin: 0;
             padding: 20px;
             display: flex;
@@ -15,71 +17,106 @@
             justify-content: center;
             height: 100%;
         }
+
         h1 {
             text-align: center;
         }
+
         /* Apply different colors for each skill */
         .t {
-            height: 20%;
-            
+            height: 5%;
         }
-        .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12, .c13, .c14, .c15 , .c16{
-            background-color: #3498db2e; /* Default background color */
+
+        .c1,
+        .c2,
+        .c3,
+        .c4,
+        .c5,
+        .c6,
+        .c7,
+        .c8,
+        .c9,
+        .c10,
+        .c11,
+        .c12,
+        .c13,
+        .c14,
+        .c15,
+        .c16 {
+            background-color: #3498db7d;
+            /* Default background color */
             color: #fff;
             border: 1px;
             border-radius: 10px;
             word-wrap: normal;
             text-align: center;
             font-weight: bold;
-            width: 25%;
-           letter-spacing: 2px;
-           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            width: 16%;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInTop 0.7s;
         }
+
         .c2 {
-            background-color: #e74d3c45;
+            background-color: #e74d3c70;
         }
+
         .c3 {
-            background-color: #2ecc702f;
+            background-color: #2ecc7079;
         }
+
         .c4 {
-            background-color: #9c59b635;
+            background-color: #9c59b689;
         }
+
         .c5 {
             background-color: #27ae5f2d;
         }
+
         .c6 {
-            background-color: #f39d1239;
+            background-color: #f39d1280;
         }
+
         .c7 {
-            background-color: #e67d223c;
+            background-color: #e67d227d;
         }
+
         .c8 {
-            background-color: #bd990941;
+            background-color: #bd990979;
         }
+
         .c9 {
-            background-color: #34495e4c;
+            background-color: #1e568e90;
         }
+
         .c10 {
-            background-color: #8d44ad4e;
+            background-color: #8d44ada6;
         }
+
         .c11 {
-            background-color: #16a0844e;
+            background-color: #16a08497;
         }
+
         .c12 {
-            background-color: #3498db45;
+            background-color: #3498dba0;
         }
+
         .c13 {
-            background-color: #c03a2b38;
+            background-color: rgba(192, 58, 43, 0.644);
         }
+
         .c14 {
-            background-color: #297fb951;
+            background-color: #297fb9a4;
         }
+
         .c15 {
-            background-color: #43962c4a;
+            background-color: #43962ca8;
         }
+
         .c16 {
-            background-color: #c4339445;
+            background-color: #c4339490;
         }
+
         /* Add more color classes for other skills */
         .auto-style1 {
             font-weight: normal;
@@ -89,31 +126,38 @@
             letter-spacing: 2px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+
         .newStyle1 {
             font-family: Calibri;
             text-align: center;
         }
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
+
+        @keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
         .animate-box {
             opacity: 0;
-            animation: fadeInLeft 0.1s ease-in-out 0.05s forwards; /* Adjusted animation duration and delay */
+            animation: fadeInLeft 0.1s ease-in-out 0.05s forwards;
+            /* Adjusted animation duration and delay */
+        }
+        th{
+            height: 2%;
         }
     </style>
 </head>
+
 <body>
-    <table>
         <table style="height:100%;width:100%;">
-            <th colspan="4"><h1 class="auto-style1">My Skills</h1></th>
-            <th></th><th></th><th></th>
+            <th colspan="4">
+                <h1 class="auto-style1">My Skills</h1>
+            </th>
             <tr class="t">
                 <td class="c1">
                     C#.Net
@@ -127,7 +171,7 @@
                 <td class="c4">
                     React JS
                 </td>
-                
+
             </tr>
             <tr class="t">
                 <td class="c5">
@@ -154,7 +198,7 @@
                     SOLID principles
                 </td>
                 <td class="c12">
-                    Agile <br/> Methodologies     
+                    Agile <br /> Methodologies
                 </td>
             </tr>
             <tr class="t">
@@ -172,6 +216,7 @@
                 </td>
             </tr>
         </table>
-    </table>
+
 </body>
+
 </html>
